@@ -16,6 +16,9 @@ html {
   background-color: #1b1919;
   inline-size: 1200px;
   block-size: 100%;
+  display: flex;
+  justify-content: center;
+  padding-right: 10px;
 }
 
 h1,
@@ -47,12 +50,6 @@ ol {
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #d9d9d9;
-}
-
-.page {
-  display: flex;
-  justify-content: center;
-  padding-right: 10px;
 }
 
 .content {
@@ -91,6 +88,7 @@ ol {
   flex-direction: row;
   align-items: center;
   width: fit-content;
+  cursor: pointer;
 }
 
 .result {
@@ -99,7 +97,7 @@ ol {
 
 .result__video-container {
   position: relative;
-  padding-top: 76px;
+  margin-top: 76px;
   inline-size: 711px;
 }
 
@@ -112,7 +110,6 @@ ol {
 .content__list-container {
   position: relative;
   margin-right: 13px;
-  overflow-x: hidden;
   overflow-y: auto;
   inline-size: 399px;
   block-size: 298px;
@@ -140,7 +137,6 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  block-size: 534px;
 }
 
 .content__video-card-title {
@@ -152,7 +148,6 @@ ol {
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
-  letter-spacing: 0%;
   text-transform: uppercase;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -165,7 +160,6 @@ ol {
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
-  letter-spacing: 0%;
 }
 
 .title {
@@ -202,7 +196,6 @@ ol {
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
-  letter-spacing: 0%;
   background: transparent;
   cursor: text;
   appearance: none;
@@ -233,10 +226,6 @@ ol {
 
 .search-form__checkbox-list :hover {
   text-decoration: underline;
-}
-
-.search-form__label {
-  cursor: pointer;
 }
 
 .search-form__label:focus {
@@ -285,7 +274,6 @@ ol {
   font-weight: 700;
   font-size: 18px;
   line-height: 100%;
-  letter-spacing: 0%;
   text-align: center;
   background: transparent;
 }
@@ -356,4 +344,8 @@ ol {
 .content__card-link:focus-visible {
   margin: 2px;
   outline: 1px solid #fff;
+}
+
+.content__card-link_current{
+  background-color: rgba(84, 80, 80, 1);
 }
